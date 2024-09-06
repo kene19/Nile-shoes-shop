@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+
+.contaner {
+  display: flex;
+  flex-wrap: wrap;
+  /* background: #1d1d1f; */
+  background: radial-gradient(circle, rgb(30, 32, 6) 0%, rgba(0, 0, 0, 1) 54%, rgba(19, 20, 19, 1) 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 81%);
+  font-family: 'Arvo';
+
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background-color: #92810f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 80px;
+  box-shadow: 0 7px 21px 0 rgba(255, 183, 1, 0.23), 0 7px 21px 0 rgba(255, 162, 0, 0.164);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius:10px ;
+  z-index: 888;
+  transition: top 0.3s;
+  
+}
+
+.nav-bar>ul {
+
+  display: flex;
+  gap: 1.2rem;
+}
+
+ul li {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  font-family: sans-serif;
+}
+
+ul li a:hover {
+  color: #ffffff;
+
+}
+.logo-png{
+  width: 50px;
+  height: auto;
+}
+.prodact{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column ;
+}
+.slider-in {
+  width: 80%;
+}
+.glide {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 7px 21px 0 rgba(0, 0, 0, 0.23), 0 7px 21px 0 rgba(0, 0, 0, 0.164);
+  border-radius: 0px;
+  
+  transition: 0.5s;
+}
+
+
+.glide__slide {
+  width: 100%;
+  height: 350px;
+  background-color: #793939;
+  border-radius: 20px;
+
+}
+
+.slid-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  filter: brightness(75%);
+
+}
+.prodact h1{
+  position: relative;
+  margin-bottom:35px ;
+  font-family: sans-serif;
+}
+.prodact h1::after{
+  position: absolute;
+  content: '';
+  bottom: -10px;
+  left: 0;
+  background-color: #92810f;
+  height: 5px;
+  width: 100%;
+  border-radius: 10px;
+  
+  
+}
+.main {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.con-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #F1FAEE;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.roller {
+  height: 4.125rem;
+  line-height: 4rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #aa9511;
+}
+
+
+#spare-time {
+  font-size: 1rem;
+  font-style: italic;
+  letter-spacing: 1rem;
+  margin-top: 0;
+  color: #A8DADC;
+
+}
+
+.roller #rolltext {
+  position: absolute;
+  top: 0;
+  animation: slide 7s infinite;
+}
+
+/* From Uiverse.io by eleventhday */
+.fancy {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 0;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 1.25em 2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+  font-size: 13px;
+}
+
+.fancy::before {
+  content: " ";
+  width: 1.5625rem;
+  height: 2px;
+  background: white;
+  top: 50%;
+  left: 1.5em;
+  position: absolute;
+  transform: translateY(-50%);
+  transform-origin: center;
+  transition: background 0.3s linear, width 0.3s linear;
+}
+
+.fancy .text {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  padding-left: 2em;
+  display: block;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+.fancy .top-key {
+  height: 2px;
+  width: 1.5625rem;
+  top: -2px;
+  left: 0.625rem;
+  position: absolute;
+  background: #92810f;
+  transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+
+.fancy .bottom-key-1 {
+  height: 2px;
+  width: 1.5625rem;
+  right: 1.875rem;
+  bottom: -2px;
+  position: absolute;
+  background: #92810f;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy .bottom-key-2 {
+  height: 2px;
+  width: 0.625rem;
+  right: 0.625rem;
+  bottom: -2px;
+  position: absolute;
+  background: #92810f;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy:hover {
+  color: white;
+  background: white;
+}
+
+.fancy:hover::before {
+  width: 0.9375rem;
+  background: black;
+}
+
+.fancy:hover .text {
+  color: black;
+  padding-left: 1.5em;
+}
+
+.fancy:hover .top-key {
+  left: -2px;
+  width: 0px;
+}
+
+.fancy:hover .bottom-key-1,
+.fancy:hover .bottom-key-2 {
+  right: 0;
+  width: 0;
+}
+
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+
+  25% {
+    top: -4rem;
+  }
+
+  50% {
+    top: -8rem;
+  }
+
+  72.5% {
+    top: -12.25rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header{
+    padding: 0 30px;
+  }
+  .fancy{
+    padding: 1em 1.3em;
+    font-size: 11PX;
+  }
+  .nav-bar{
+    display: none;
+  }
+  .h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #F1FAEE;
+    font-size: 1.125rem;
+  }
+
+  .roller {
+    height: 2.6rem;
+    line-height: 2.125rem;
+  }
+
+  #spare-time {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .glide__slide {
+    width: 100%;
+    height: 250px;
+  
+  }
+  
+  .slid-img {
+    width: 100%;
+    height: 250px;
+  
+  
+  }
+
+  .roller #rolltext {
+    animation: slide-mob 5s infinite;
+  }
+
+  @keyframes slide-mob {
+    0% {
+      top: 0;
+    }
+
+    25% {
+      top: -2.125rem;
+    }
+
+    50% {
+      top: -4.25rem;
+    }
+
+    72.5% {
+      top: -6.375rem;
+    }
+  }
+}

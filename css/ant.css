@@ -1,0 +1,146 @@
+.aubout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 300vh;
+    background-color: black;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.aubout h1 {
+    color: #c2ab15;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.card-img {
+    flex: 1 0 250px;
+    width: 400px;
+    height: 400px;
+
+}
+
+.card-img img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+.card-img img:hover{
+transform: scale(1.1);
+}
+
+.card {
+    flex: 1 0 250px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+
+.card h1 {
+
+    color: #fff;
+}
+
+.card p {
+    color: #cac9c9;
+}
+
+.phone {
+    display: none;
+}
+
+.menu {
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+}
+.phone-navbar{
+
+    position: fixed;
+    inset: 0;
+    background-color: rgb(20, 20, 20);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+
+}
+.phone-navbar div ul a li {
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+}
+.phone-navbar div ul a li {
+    text-decoration: none;
+    margin: 10px auto;
+    color: #c2ab15;
+    
+}
+a{
+    text-decoration:  none;
+}
+.xbtn{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    padding: 10px;
+}
+@media screen and (max-width:800px) {
+     h1{
+        text-align: center;
+     }
+    .phone{
+        display: block;
+    }
+    .cards {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .card-img {
+
+        width: 200px;
+        height: 100px;
+
+    }
+
+    .card-img img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .card {
+
+        width: 200px;
+        height: 100px;
+
+
+    }
+
+    p {
+        font-size: 11px;
+    }
+
+    .aubout {
+        height: 200vh;
+        padding-top: 180px;
+    }
+
+}

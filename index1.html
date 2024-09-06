@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nile shoes</title>
+    <link rel="stylesheet" href="css/glide.core.min.css">
+    <link rel="stylesheet" href="css/glide.theme.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="shortcut icon" type="icon" href="photo/logo.png">
+
+</head>
+
+<body>
+     
+
+    <div class="con">
+        <div class="phone-navbar">
+            <div >
+               <ul>
+                   <a href="index.html"       onclick="dis()"><li>home</li></a>
+                   <a href="#prodact" onclick="dis()"><li>prodact</li></a>
+                   <a href="#contact"    onclick="dis()"><li>contact</li></a>
+               </ul>
+            </div>
+            <button class="xbtn" onclick="x()">X</button>
+       </div>
+        <div class="top-menu">
+           <div class="logo">
+            <div class="logo-img">
+                <img src="photo/logo1.png" alt="" class="logo-png">
+            </div>
+           </div>
+           <div class="nav-bar">
+            <ul>
+                <li><a href="./index.html">home</a> </li>
+                <li><a href="#prodact">prodact</a> </li>
+                <li><a href="#contact">contact</a> </li>
+         
+            </ul>
+           </div>
+           <div class="nav-bar-cart">
+            
+               <img src="photo/i.png" alt="" class="menu" onclick="menu()">
+            
+            <img src="photo/cart.png" alt="" class="cart-img">
+            <img src="photo/notification.png" alt="" class="cart-img">
+           </div>
+           
+        </div>
+        <div class="slider">
+            <div class="slider-in">
+                <div class="glide">
+
+                    <div class="glide__track" data-glide-el="track">
+                      <ul class="glide__slides">
+                        <li class="glide__slide"><img src="photo/img2.jpg" alt="" class="slid-img"></li>
+                        <li class="glide__slide"><img src="photo/img1.jpg" alt="" class="slid-img"></li>
+                        <li class="glide__slide"><img src="photo/JORDAN+3+RETRO+(PS).png" alt="" class="slid-img"></li>
+                         
+                      </ul>
+                      
+                    </div>
+                    <div class="glide__bullets" data-glide-el="controls[nav]">
+                      <button class="glide__bullet" data-glide-dir="=0"></button>
+                      <button class="glide__bullet" data-glide-dir="=1"></button>
+                      <button class="glide__bullet" data-glide-dir="=2"></button>
+                    </div>
+                    <div class="glide__arrows" data-glide-el="controls">
+                      <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><</button>
+                          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
+                    </div>
+                  </div>
+            </div>
+
+        </div>
+        <div class="filter">
+             
+            <button class="btnkanu" onclick="filterprod('all')">ALL</button>
+            <button class="btnkanu" onclick="filterprod('CASUAL')">CASUAL</button>
+            <button class="btnkanu" onclick="filterprod('RUNNING')">RUNNING</button>
+            <button class="btnkanu" onclick="filterprod('FOOTBALL')">FOOTBALL</button>
+        </div>
+        <div class="gon" id="prodact">
+
+        </div>
+    </div>
+
+
+
+    <script src="./js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        let slid = {
+            type: 'carousel',
+            perView: 1,
+            autoplay: 4000,
+        }
+        new Glide('.glide', slid).mount()
+
+        let lasttop = 0;
+        let top_menu = document.querySelector(".top-menu")
+        let phone_navbar = document.querySelector(".phone-navbar")
+
+        function dis(){
+            phone_navbar.style.display = "none"
+        }
+        function x() {
+            phone_navbar.style.display = "none"
+        }
+        function menu() {
+            phone_navbar.style.display = "flex"
+        }
+       
+        window.addEventListener("scroll",()=>{
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+       
+       if (scrollTop > lasttop) {
+           top_menu.style.top = "-100px"
+       }else{
+           top_menu.style.top = "0"
+       }
+       lasttop = scrollTop
+        })
+        
+
+    </script>
+</body>
+
+</html>
