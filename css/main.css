@@ -17,14 +17,15 @@
 
 .header {
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   top: 0;
   left: 0;
   right: 0;
   height: 70px;
   background-color: #92810f;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
   padding: 0px 80px;
   box-shadow: 0 7px 21px 0 rgba(255, 183, 1, 0.23), 0 7px 21px 0 rgba(255, 162, 0, 0.164);
   border-bottom-left-radius: 10px;
