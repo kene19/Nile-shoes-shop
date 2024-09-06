@@ -2,6 +2,8 @@
 
 Welcome to **Nile Shoes**, an e-commerce platform for stylish and comfortable shoes. This website provides users with an easy-to-navigate interface for browsing, filtering, and purchasing products. The website is designed with responsiveness, user-friendliness, and customer satisfaction in mind.
 
+open by this link <a href="https://kene19.github.io/Nile-shoes-shop/">nile shoes</a>
+
 ## Features
 
 - **Responsive Design**: The website is optimized for both mobile and desktop users.
