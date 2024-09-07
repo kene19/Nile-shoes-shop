@@ -3,7 +3,9 @@
   padding: 0;
   scroll-behavior: smooth;
 }
-
+body  {
+  overflow:hidden;
+  width:100%;
 
 .contaner {
   display: flex;
