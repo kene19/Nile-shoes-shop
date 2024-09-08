@@ -4,6 +4,10 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+body{
+  width:100%;
+  overflow: hidden;
+}
 
 .contaner {
 
@@ -20,7 +24,8 @@
   align-items: center;
   justify-content: space-between;
   top: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
   height: 70px;
   background-color: #92810f;
   padding: 0px 80px;
