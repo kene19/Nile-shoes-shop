@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    
+        <div class="con1">
         <div class="phone-navbar">
              <div >
                 <ul>
@@ -26,7 +26,7 @@
              </div>
              <button class="xbtn" onclick="x()">X</button>
         </div>
-        <div class="header" id="head">
+        <div class="heade" id="head">
             <div class="logo">
                 <img src="photo/logo.png" alt="" class="logo-png" loading="lazy">
             </div>
@@ -130,6 +130,7 @@
                 </div>
             </div>
         </div>
+    </div>
     
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
@@ -147,7 +148,7 @@
         new Glide('.glide', slid).mount()
         AOS.init();
         let lasttop = 0;
-        let top_menu = document.querySelector(".header")
+        let top_menu = document.querySelector(".heade")
         let phone_navbar = document.querySelector(".phone-navbar")
 
         function dis(){
