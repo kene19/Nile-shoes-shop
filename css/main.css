@@ -21,7 +21,8 @@
   align-items: center;
   justify-content: space-between;
   top: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
   height: 70px;
   background-color: #92810f;
   padding: 0px 80px;
@@ -291,6 +292,8 @@ ul li a:hover {
 @media screen and (max-width: 800px) {
   .heade{
     padding: 0 30px;
+    left: 0;
+    right: 0;
   }
   .fancy{
     padding: 1em 1.3em;

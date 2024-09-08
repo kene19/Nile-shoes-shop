@@ -6,7 +6,7 @@
     height: 300vh;
     background-color: black;
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-    width: 100%;
+    
 }
 
 .aubout h1 {
@@ -129,7 +129,7 @@ a{
 
     .card {
 
-        width: 200px;
+        width: 90%;
         height: 100px;
 
 
@@ -141,8 +141,13 @@ a{
 
     .aubout {
         height: 300vh;
-        padding-top: 180px;
+        padding-top: 150px;
+        width: 100%;
         
+    }
+    .con1{
+        width: 100%;
+        overflow-x: hidden;
     }
 
 }
