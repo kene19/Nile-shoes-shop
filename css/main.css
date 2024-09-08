@@ -1,14 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
 
 .contaner {
-  display: flex;
-  flex-wrap: wrap;
-  /* background: #1d1d1f; */
+
   background: radial-gradient(circle, rgb(30, 32, 6) 0%, rgba(0, 0, 0, 1) 54%, rgba(19, 20, 19, 1) 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 81%);
   font-family: 'Arvo';
@@ -25,7 +24,6 @@
   right: 0;
   height: 70px;
   background-color: #92810f;
-
   padding: 0px 80px;
   box-shadow: 0 7px 21px 0 rgba(255, 183, 1, 0.23), 0 7px 21px 0 rgba(255, 162, 0, 0.164);
   border-bottom-left-radius: 10px;
